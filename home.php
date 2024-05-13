@@ -1,9 +1,8 @@
 <?php
 include 'header.php';
 ?>
-
 <body id="top">
-    <div class="container mt-4 pb-sm-5 pb-0" style="margin:">
+    <div class="container mt-4 pb-sm-5 pb-0">
         <div class="row">
             <div class="col-lg-8 col-md-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -163,5 +162,3 @@ include 'header.php';
         gtag('config', 'UA-127793164-1');
     </script>
 </body>
-
-</html>

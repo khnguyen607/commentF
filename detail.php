@@ -1,3 +1,5 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<script src="./modules/comments/comments.js"></script>
 <?php
 include 'header.php';
 ?>
@@ -24,7 +26,7 @@ include 'header.php';
                     <span style="color:#000000;">
                         <em>
                             <span style="font-size:14px;">
-                                <span style="font-familsy:Arial,Helvetica,sans-serif;"></span>
+                                <span style="font-family:Arial,Helvetica,sans-serif;"></span>
                             </span>
                         </em>
                     </span>
@@ -155,40 +157,37 @@ include 'header.php';
                     </div>
                 </div>
             </div>
-            <div class="comment-container ">
+            <div class="comment-container" id="commentsList">
                 <div class="comment-input ">
                     <div class="mb-3">
                         <label for="commentMessage" class="form-label" style="font-size: larger;"><strong>Cho chúng tôi biết suy nghĩ của bạn về bài viết nhé</strong></label>
                         <textarea class="form-control" id="commentMessage" rows="3" placeholder="Viết bình luận ở đây"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Gửi</button>
+                    <button type="submit" class="btn btn-primary" id="commentButton">Gửi</button>
                 </div>
                 <hr>
-                <div class="comment">
-                    <div class="d-flex align-items-center mb-6">
-                        <img class="avatar" src="https://via.placeholder.com/50" alt="Avatar">
-                        <div>
-                            <div class="comment-card">
-                                <h5 class="card-title">Đức An</h5>
-                                <p class="card-text">Bài viết hay quá</p>
-                                <!-- Reply Button -->
-                                <button class="btn btn-sm btn-primary reply">Trả lời</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="comment commentsList">
 
-                    <!-- Reply Comment -->
-                    <div class="reply">
+                    <div class="reply my-2 commentsItem">
                         <div class="d-flex align-items-center">
                             <img class="avatar" src="https://via.placeholder.com/50" alt="Avatar">
-                            <div>
-                                <div class="reply-card">
-                                    <h5 class="card-title">Đức Anh</h5>
-                                    <p class="card-text">Tớ cảm ơn ạ</p>
+                            <div class="reply-card">
+                                <h5 class="card-title">Đức Anh</h5>
+                                <p class="card-text">Tớ cảm ơn ạ</p>
+                                <small class="text-muted">Đã đăng: 13/05/2024 10:30 AM</small> <!-- Thời gian đăng -->
+                                <button class="btn btn-sm btn-primary _btnReply">
+                                    <i class="bi bi-reply"></i> <!-- Icon "reply" -->
+                                </button>
+                                <div class="input-group mt-2 d-none">
+                                    <input type="text" class="form-control">
+                                    <button class="btn btn-outline-primary" type="button">
+                                        <i class="bi bi-arrow-right-circle"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
             <br>
